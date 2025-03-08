@@ -1,12 +1,56 @@
+/* Asegúrate de que el body y html ocupen toda la altura de la ventana */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Evita el scroll */
+}
+
 #alcaldia{
     width: 125px;
     height: 125px;
+    float: left;
 }
 
 #textoinicio{
-    clear: both;
+    font-family: "Onest", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    position: absolute;
+    right: 600px;
+    top: 120px;
 }
 
 #policia{
     float: right;
+    width: 17%;
+    height: auto;
 }
+
+
+#background-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra todo el fondo */
+    z-index: -1; /* Coloca el video detrás del contenido */
+}
+
+.login-form{
+    position: absolute;
+    top: 300px;
+    right: 650px;
+}
+
+#imagenmapa{
+    width: 15%;
+    height: auto;
+    position: absolute;
+    top: 500px;
+
+}
+
+

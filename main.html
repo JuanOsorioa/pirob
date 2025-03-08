@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <!--Link CSS-->
+    <!--links de conexión para fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
     <title>Bienvenido a pirob</title>
 </head>
 <body>
     <header>
+        <video id="background-video" onloadedmetadata="this.muted=true" autoplay loop>
+            <source src="sources/videos/249191_small.mp4">
+        </video>
         <div>
             <img id="alcaldia" src="sources/images/channels4_profile.jpg" alt="Logo alcaldía de Medellín">
         </div>
@@ -16,10 +22,26 @@
             <H1 id="textoinicio">Del pueblo y para el pueblo <br> Pirob</H1>
         </div>
         <div id="policia">
-            <img src="sources/images/images.jpeg" alt="Logo policía nacional">
+            <img src="sources/images/logo policia.png" alt="Logo policía nacional">
         </div>
 
     </header>
+    <main>
+        <form class="login-form">
+            <h2>Sign In</h2>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="signin-button">Sign In</button>
+            <a href="#" class="forgot-password">Forgot password?</a>
+        </form>
+        <img id="imagenmapa" src="sources/images/imagen 1.png" alt="imagen de mapa">
+    </main>
     
 </body>
 </html>
